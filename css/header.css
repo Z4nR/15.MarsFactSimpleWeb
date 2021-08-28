@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,300&family=Dosis:wght@500&family=Maitree:wght@300&display=swap');
+
+.header-ctx-teks {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #E27B58;
+    text-align: center;
+    color: white;
+}
+
+.header-ctx-title {
+    font-family: "Dosis", sans-serif;
+}
+
+.header-ctx-subtitle, .nav-list {
+    font-family: "Averia Sans Libre", sans-serif;
+}
+
+.nav-list {
+    font-size: 20px;
+}
+
+nav {
+    background-color: #FF9D6F;
+    padding: 5px;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: white;
+}
