@@ -3,10 +3,12 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 h2 {
     font-family: "Dosis", sans-serif;
+    color: #E27B58;
 }
 
 p {
@@ -19,13 +21,21 @@ article li {
     font-family: "Maitree", sans-serif;
 }
 
+article ul {
+    flex-grow: 1;
+}
+
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 #99857A;
     border-radius: 10px;
     padding: 20px;
     margin-top: 20px;
 }
 
-.card-box {
+.article-box {
     margin: 0 10px 0 10px;
+}
+
+.ciri-ctx {
+    display: flex;
 }
