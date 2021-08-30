@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,300&family=Dosis:wght@500&family=Maitree:wght@300&display=swap');
 
+* {
+   box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
     height: 100%;
+}
+
+main {
+    overflow: auto;
+    padding: 10px;
 }
 
 h2 {
@@ -11,7 +20,7 @@ h2 {
     color: #E27B58;
 }
 
-p {
+article p {
     font-family: "Maitree", sans-serif;
     font-weight: 800;
     text-align: justify;
@@ -28,6 +37,14 @@ article ul {
     padding-left: 15px;
 }
 
+aside {
+    box-shadow: 0 4px 8px 0 #99857A;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 #99857A;
     border-radius: 10px;
@@ -37,8 +54,8 @@ article ul {
     overflow: hidden;
 }
 
-.article-box {
-    margin: 0 10px 0 10px;
+.profile-box {
+    text-align: center;
 }
 
 #overlay-img {
@@ -57,6 +74,30 @@ article ul {
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
+}
+
+@media screen and (min-width: 901px) {
+    aside {
+        width: 34%;
+        transition: 0.5s;
+        float: right;
+    }
+    .article-box {
+        width: 65%;
+        transition: 0.5s;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    aside {
+        width: 100%;
+        transition: 0.5s;
+    }
+    .article-box {
+        width: 100%;
+        transition: 0.5s;
+    }
 }
 
 @media screen and (min-width: 681px) {
