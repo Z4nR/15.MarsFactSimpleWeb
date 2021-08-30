@@ -14,12 +14,13 @@ h2 {
 p {
     font-family: "Maitree", sans-serif;
     font-weight: 800;
+    text-align: justify;
 }
 
 article li {
-    list-style-type: none;
     font-family: "Maitree", sans-serif;
     font-weight: 800;
+    text-align: justify;
 }
 
 article ul {
@@ -40,18 +41,14 @@ article ul {
     margin: 0 10px 0 10px;
 }
 
-.ciri-ctx {
-    display: flex;
-}
-
-#ciri-img {
+#overlay-img {
     border-radius: 0 0 10px 0;
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
-    height: 200px;
-    opacity: 70%;
+    height: 300px;
+    opacity: 50%;
 }
 
 #article-img {
@@ -59,4 +56,20 @@ article ul {
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 681px) {
+    #overlay-img {
+        transition: 0.5s;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #overlay-img {
+        transition: 0.5s;
+        opacity: 50%;
+        height: 100px;
+        opacity: 70%;
+    }
 }
