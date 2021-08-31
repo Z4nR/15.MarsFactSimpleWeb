@@ -89,6 +89,7 @@ aside {
 
 @media screen and (min-width: 901px) {
     aside {
+        font-family: "Maitree", sans-serif;
         width: 24%;
         transition: 0.5s;
         float: right;
