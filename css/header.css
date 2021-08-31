@@ -43,30 +43,26 @@ nav a:hover {
 }
 
 #list-btn {
-    flex-grow: 1;
     height: 36px;
-    align-self: flex-end;
 }
 
 .dropdown {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    display: inline-block;
     list-style-type: none;
-    padding-right: 10px;
 }
 
 #list-drop {
-    padding-top: 20px;
     list-style-type: none;
-    flex-grow: 1;
     position: absolute;
     background-color: #663926;
-    padding: 20px;
+    padding: 12px 16px;
     border-radius: 10px;
-    z-index: 2;
-    right: 0;
+    z-index: 1;
     margin-right: 15px;
+}
+
+#list-drop li {
+    padding: 10px;
 }
 
 @media screen and (min-width: 461px) {
@@ -83,5 +79,10 @@ nav a:hover {
     #list-drop li a {
         font-family: "Averia Sans Libre", sans-serif;
         color: white;
+    }
+
+    .nav-list {
+        padding-left: 25px;
+        margin: 10px 0 10px 0;
     }
 }
