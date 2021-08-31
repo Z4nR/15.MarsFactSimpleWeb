@@ -54,8 +54,19 @@ aside {
     overflow: hidden;
 }
 
+.profile-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
 .profile-box {
     text-align: center;
+}
+
+.profile-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #overlay-img {
@@ -98,6 +109,15 @@ aside {
         width: 100%;
         transition: 0.5s;
     }
+    .profile-ctn {
+        flex-direction: row;
+    }
+    .profile-desc {
+        flex-grow: 1;
+    }
+    figure {
+        flex-grow: 1;
+    }
 }
 
 @media screen and (min-width: 681px) {
@@ -112,5 +132,11 @@ aside {
         opacity: 50%;
         height: 100px;
         opacity: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .profile-ctn {
+        flex-direction: column;
     }
 }

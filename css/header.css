@@ -43,17 +43,23 @@ nav a:hover {
 }
 
 #list-btn {
+    flex-grow: 1;
     height: 36px;
+    align-self: flex-end;
 }
 
 .dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
     list-style-type: none;
     padding-right: 10px;
-    width: auto;
 }
 
 #list-drop {
+    padding-top: 20px;
     list-style-type: none;
+    flex-grow: 1;
     position: absolute;
     background-color: #663926;
     padding: 20px;
